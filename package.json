@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/composition-api": "^0.34.0",
     "@pinia/nuxt": "^0.5.3",
+    "axios": "^1.7.4",
     "nuxt": "^3.12.4",
     "pinia": "^2.2.2",
     "pinia-plugin-persistedstate": "^3.2.1",
@@ -19,6 +20,8 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.68",
+    "@iconify-json/ph": "^1.1.14",
+    "@iconify-json/solar": "^1.1.10",
     "@nuxt/icon": "^1.4.5",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "autoprefixer": "^10.4.20",
