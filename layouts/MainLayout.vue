@@ -5,6 +5,7 @@
         <div>
             <SideNavMain />
         </div>
+        <slot />
 
     </div>
 

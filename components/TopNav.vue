@@ -13,7 +13,7 @@
                     class="w-full pl-3 my-2 bg-transparent placeholder-[#838383] text-[15px] focus:outline-none "
                     placeholder="Search accounts">
                 <div>
-                    <Icon name="ic:round-search" color="#a1a2a7" size="24" class="mr-2" />
+                    <Icon name="ic:round-search" style="color:darkgray" size="24" class="mr-2" />
                 </div>
 
             </div>

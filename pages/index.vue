@@ -1,6 +1,13 @@
 <template>
-    <div class="bg-red-500">
-        testing
-        <Icon name="mdi:account-badge" size="100" style="color:white" />
-    </div>
+    <MainLayout>
+        <div class=" pt-[80px] w-[calc(100%-90px)] max-w-[690px]">
+
+            <PostMain />
+        </div>
+
+    </MainLayout>
+
 </template>
+<script setup>
+import MainLayout from "~/layouts/MainLayout.vue";
+</script>
