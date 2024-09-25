@@ -11,7 +11,7 @@
                     <div class="text-gray-800 text-[15px] truncate ">
                         user name
                     </div>
-                    <button v-if="true"
+                    <button @click="$event => $generalStore.isEditProfileOpen = true" v-if="true"
                         class="flex items-center border rounded-md py-1.5 px-3.5 mt-3 text-[13px] font-semibold hover:bg-gray-100   ">
                         <Icon name="mdi:pencil" size="18" class=" mt-0.5 mr-1" />
                         <div>Edit profile</div>
@@ -87,4 +87,6 @@
 
 <script setup>
 import MainLayout from '~/layouts/MainLayout.vue';
+
+const { $generalStore } = useNuxtApp()
 </script>

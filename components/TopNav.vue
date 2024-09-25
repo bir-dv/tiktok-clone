@@ -22,14 +22,15 @@
                     <Icon name="material-symbols:add" color="#000000" size="24" />
                     <span>Upload</span>
                 </button>
-                <div v-if="false" class="flex items-center ">
-                    <button class="flex items-center bg-[#f02c56] text-white border rounded-md px-3 py-[6px] ">
+                <div v-if="!$userStore.id" class="flex items-center ">
+                    <button @click="$event => $generalStore.isLoginOpen = true"
+                        class="flex items-center bg-[#f02c56] text-white border rounded-md px-3 py-[6px] ">
                         <span class="mx-4 font-medium text-[15px]">Log in</span>
 
                     </button>
                     <Icon name="mdi:dots-vertical" color="#161724" size="25" />
                 </div>
-                <div class="flex items-center gap-2">
+                <div v-else class="flex items-center gap-2">
                     <Icon name="carbon:send-alt" color="#161724" size="30" />
                     <Icon name="bx:message-detail" color="#161724" size="27" />
 
@@ -66,4 +67,8 @@
 <script setup>
 const route = useRoute()
 const showMenu = ref(false)
+
+//this is to control signin modal visiblity in top
+const { $generalStore, $userStore } = useNuxtApp()
+
 </script>
